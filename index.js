@@ -1,5 +1,4 @@
 import express from "express";
-import dotenv from "dotenv";
 import webhookRoutes from "./routes/webhook.js";
 import agentRoutes from "./routes/agent.js";
 
