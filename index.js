@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static("public"));
 
-app.use("/", webhookRoutes);
+app.use("/webhook", webhookRoutes);
 app.use("/agent", agentRoutes);
 
-app.get("/health", (req, res) => {
-  res.send("WhatsApp bot running 🚀");
+app.get("/", (req, res) => {
+  res.sendFile("index.html", { root: "public" });
 });
 
 app.listen(PORT, () => {

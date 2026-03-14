@@ -1,0 +1,65 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.users {
+  width: 25%;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  overflow: auto;
+}
+
+.user {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.user:hover .chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  padding: 15px;
+  overflow: auto;
+}
+
+.msg {
+  margin: 8px 0;
+}
+
+.userMsg {
+  text-align: left;
+}
+
+.agentMsg {
+  text-align: right;
+}
+
+.inputBox {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  margin-left: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
